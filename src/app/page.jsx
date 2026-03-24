@@ -1,9 +1,16 @@
+import Banner from "@/Components/Home/Banner";
+import Products from "@/Components/Home/Products";
 import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      this is main
+    <div className="space-y-20">
+      <section>
+        <Banner></Banner>
+      </section>
+      <section>
+        <Products></Products>
+      </section>
     </div>
   );
 }
