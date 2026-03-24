@@ -1,10 +1,17 @@
 import NavLink from '@/Components/buttons/NavLink';
+import Link from 'next/link';
 import React from 'react';
 
 const Navbar = () => {
     const nav = <>
     <li>
         <NavLink href={"/"}>Home</NavLink>
+    </li>
+    <li>
+        <NavLink href={"/products"}>Products</NavLink>
+    </li>
+    <li>
+        <NavLink href={"/about"}>About</NavLink>
     </li>
     </>
     return (
@@ -20,7 +27,7 @@ const Navbar = () => {
                        {nav}
                     </ul>
                 </div>
-                <a className="btn btn-ghost text-xl">daisyUI</a>
+                <Link href={"/"} className="text-xl uppercase" >Tampuiya</Link>
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal px-1">
