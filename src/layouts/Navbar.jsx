@@ -1,6 +1,7 @@
 import NavLink from '@/Components/buttons/NavLink';
 import Link from 'next/link';
 import React from 'react';
+import { HiOutlineShoppingCart } from "react-icons/hi";
 
 const Navbar = () => {
     const nav = <>
@@ -35,7 +36,11 @@ const Navbar = () => {
                 </ul>
             </div>
             <div className="navbar-end">
-                <a className="btn">Button</a>
+                <Link className='btn btn-secondary mr-2' href={"/carts"}><HiOutlineShoppingCart  size={20}/></Link>
+                <Link href={"/login"}>
+                
+                <button className="btn btn-secondary btn-outline">Login</button>
+                </Link>
             </div>
         </div>
     );
