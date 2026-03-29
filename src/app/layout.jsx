@@ -25,7 +25,7 @@ export default function RootLayout({ children }) {
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">
-        <header className="py-2 md:w-11/12 mx-auto">
+        <header className="py-1 px-5">
           <Navbar></Navbar>
         </header>
         <main className="min-h-[calc(100vh-302px)]">

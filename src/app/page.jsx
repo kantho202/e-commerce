@@ -8,7 +8,7 @@ export default function Home() {
       <section>
         <Banner></Banner>
       </section>
-      <section>
+      <section className="py-1 px-5">
         <Products></Products>
       </section>
     </div>

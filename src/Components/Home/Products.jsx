@@ -6,7 +6,7 @@ const Products = () => {
         <h1>Our Products</h1>
                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae reiciendis 
                 similique delectus inventore aut aliquam accusantium numquam consequuntur maxime
-                 necessitatibus optio, quaerat iusto rerum  ewddf accusamus quis ab et unde?</p>
+                 necessitatibus optio, quaerat usamus quis ab et unde?</p>
         </div>
     );
 };
