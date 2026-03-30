@@ -36,10 +36,10 @@ const Navbar = () => {
                 </ul>
             </div>
             <div className="navbar-end">
-                <Link className='btn btn-secondary mr-2' href={"/carts"}><HiOutlineShoppingCart  size={20}/></Link>
+                <Link className='p-3 mr-2' href={"/carts"}><HiOutlineShoppingCart  size={20}/></Link>
                 <Link href={"/login"}>
                 
-                <button className="btn btn-secondary btn-outline">Login</button>
+                <button className="btn btn-black btn-outline">Login</button>
                 </Link>
             </div>
         </div>
