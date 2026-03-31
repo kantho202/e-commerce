@@ -25,12 +25,15 @@ const Products = () => {
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
                 {products.map((product) => (
                     <div key={product._id} className="bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300">
-                        {product.image && (
-                            <Image
-                                src={product.images[0].url}
-                                alt={product.name}
-                                className="w-full h-52 object-cover"
-                            />
+                        {product.images?.[0]?.url && (
+                            <div className="relative w-full h-52">
+                                <Image
+                                    src={product.images[0].url}
+                                    alt={product.title || product.name}
+                                    fill
+                                    className="object-cover"
+                                />
+                            </div>
                         )}
                         <div className="p-4">
                             <h3 className="text-lg font-semibold text-gray-800">{product.title}</h3>
