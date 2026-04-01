@@ -9,11 +9,12 @@ const Navbar = () => {
         <NavLink href={"/"}>Home</NavLink>
     </li>
     <li>
-        <NavLink href={"/products"}>Products</NavLink>
+        <NavLink href={"/Products"}>Products</NavLink>
     </li>
     <li>
         <NavLink href={"/about"}>About</NavLink>
     </li>
+    
     </>
     return (
         <div className="navbar bg-base-100 ">
@@ -38,6 +39,7 @@ const Navbar = () => {
             <div className="navbar-end">
                 <Link className='p-3 mr-2' href={"/carts"}><HiOutlineShoppingCart  size={20}/></Link>
                 <Link href={"/login"}>
+                
                 
                 <button className="btn btn-black btn-outline">Login</button>
                 </Link>

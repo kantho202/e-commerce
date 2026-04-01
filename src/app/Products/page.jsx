@@ -1,12 +1,9 @@
-import React from 'react';
+import Products from "@/Components/Home/Products";
 
-const Products = () => {
+export default function ProductsPage() {
     return (
-        <div>
-            <h1>Our Products</h1>
-         
+        <div className="py-1 px-5">
+            <Products />
         </div>
     );
-};
-
-export default Products;
+}

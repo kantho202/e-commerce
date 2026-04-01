@@ -6,7 +6,7 @@ import React from 'react';
 
 const NavLink = ({href ,children}) => {
     const path =usePathname();
-    return <Link  className={`${path.startsWith(href) && "text-secondary"} font-medium`} href={href}>{children}</Link>;
+    return <Link className={`${path === href || (href !== "/" && path.startsWith(href)) ? "text-secondary" : ""} font-medium`} href={href}>{children}</Link>;
 };
 
 export default NavLink;

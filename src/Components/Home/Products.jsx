@@ -26,7 +26,7 @@ const Products = () => {
                 {products.map((product) => (
                     <div key={product._id} className="bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300">
                         {product.images?.[0]?.url && (
-                            <div className="relative w-full h-52">
+                            <div className="relative w-full h-120">
                                 <Image
                                     src={product.images[0].url}
                                     alt={product.title || product.name}
