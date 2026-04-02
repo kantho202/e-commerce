@@ -3,7 +3,7 @@ import React from 'react';
 const page = () => {
     return (
         <div>
-            this is products page
+            this is products  DESgin in most beautiful 
         </div>
     );
 };
