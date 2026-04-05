@@ -4,6 +4,7 @@ const page = () => {
     return (
         <div>
             <h1>This is log in page</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis labore vero culpa facilis? Nostrum non sunt vitae ab! Natus praesentium dolores officia tenetur totam. Facilis corrupti laudantium nulla sint blanditiis!</p>
             <fieldset className="fieldset bg-base-200 border-base-300 rounded-box w-xs border p-4">
   <legend className="fieldset-legend">Login</legend>
 
