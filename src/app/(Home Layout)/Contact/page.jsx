@@ -5,7 +5,13 @@ const page = () => {
         <div>
             <h1>This  is a contact page </h1>
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates delectus voluptas rem mollitia fuga aspernatur voluptate assumenda quod at magnam saepe numquam voluptatibus laborum quo eum, esse culpa? Nobis, nemo!</p>
+            <div>
+                <h1>contact </h1>
+                <h1>Email : dihaymoon@gmail.com</h1>
+                <p>Phone :</p>
+            </div>
         </div>
+
     );
 };
 
