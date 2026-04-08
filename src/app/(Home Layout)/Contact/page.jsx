@@ -8,7 +8,13 @@ const page = () => {
             <div>
                 <h1>contact </h1>
                 <h1>Email : dihaymoon@gmail.com</h1>
-                <p>Phone :</p>
+                <p>Phone :01851212</p>
+                <div>
+                    <fieldset>
+                        <label > Contact Information </label>
+                        <input type="text" />
+                    </fieldset>
+                </div>
             </div>
         </div>
 
