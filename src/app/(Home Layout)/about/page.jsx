@@ -7,6 +7,7 @@ const page = () => {
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum deleniti, aut nesciunt dolorum animi corrupti molestiae ut vero. Est incidunt amet, eaque id quaerat reiciendis voluptas dolorum unde repellendus cumque!</p>
             <div>
                 <h1>This is me what are you doing</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates ipsum maxime labore, perferendis possimus architecto deleniti tempore commodi illum nisi. Officiis incidunt sapiente eum fugit iste dicta nisi earum id.</p>
             </div>
         </div>
     );
