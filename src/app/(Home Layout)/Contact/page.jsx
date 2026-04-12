@@ -13,6 +13,10 @@ const page = () => {
                     <fieldset>
                         <label > Contact Information </label>
                         <input type="text" />
+                        <label > Social Information </label>
+                        <input type="text" />
+                        <label >  Information </label>
+                        <input type="text" />
                     </fieldset>
                 </div>
             </div>
