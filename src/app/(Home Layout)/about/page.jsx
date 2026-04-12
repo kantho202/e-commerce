@@ -9,7 +9,14 @@ const page = () => {
                 <h1>This is me what are you doing</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates ipsum maxime labore, perferendis possimus architecto deleniti tempore commodi illum nisi. Officiis incidunt sapiente eum fugit iste dicta nisi earum id.</p>
                 <div>this website is a how to sell product </div>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae vero consequatur inventore minima atque esse! Delectus, assumenda possimus, dolores quod unde, recusandae praesentium nemo rerum aut commodi atque voluptas totam!</p>
+                <p>Lorem ipsum d
+                    olor sit amet consectetur adipisicing elit. Vitae
+                    vero consequatur inventore minima atque esse! Delectus, assumenda possimus,
+                    dolores quod unde, recusandae praesentium nemo rerum aut commodi atque voluptas totam!</p>
+                    <div>
+                        <h1>this is high class of the month</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero, excepturi. Maxime, consequuntur neque quae, beatae distinctio ipsa molestiae nostrum rerum natus, maiores id laudantium nemo ab culpa debitis labore a?</p>
+                    </div>
             </div>
         </div>
     );
