@@ -17,6 +17,10 @@ const page = () => {
                         <h1>this is high class of the month</h1>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero, excepturi. Maxime, consequuntur neque quae, beatae distinctio ipsa molestiae nostrum rerum natus, maiores id laudantium nemo ab culpa debitis labore a?</p>
                     </div>
+                    <div>
+                        <h1>this  is the header section</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus facilis quaerat debitis, inventore et, accusamus vero a reiciendis at obcaecati rem neque dolorem laboriosam magni, tempore odio. Quae, nemo deleniti!</p>
+                    </div>
             </div>
         </div>
     );
