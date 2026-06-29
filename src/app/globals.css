@@ -1,12 +1,93 @@
 @import "tailwindcss";
- @plugin "daisyui" {
-   themes: light --default;
- }
-
- @plugin "daisyui/theme" {
-  name: "light";
-  default: true;
-  --color-primary: blue;
-  --color-secondary: teal;
+@plugin "daisyui" {
+  themes: light dark --default;
 }
-@custom-variant dark (&:where([data-theme=night], [data-theme=night] *));
+
+/* ── Custom Design Tokens ─────────────────────────────── */
+:root {
+  --radius-card: 1.25rem;
+  --shadow-card: 0 4px 32px 0 rgba(0,0,0,0.08);
+  --transition-base: 0.22s cubic-bezier(0.4,0,0.2,1);
+}
+
+/* ── Smooth Scrolling ─────────────────────────────────── */
+html { scroll-behavior: smooth; }
+
+/* ── Glass Morphism Utility ───────────────────────────── */
+.glass-card {
+  background: rgba(255,255,255,0.08);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  border: 1px solid rgba(255,255,255,0.15);
+}
+
+.dark .glass-card {
+  background: rgba(0,0,0,0.25);
+  border: 1px solid rgba(255,255,255,0.08);
+}
+
+/* ── Gradient Text ────────────────────────────────────── */
+.gradient-text {
+  background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 50%, #06b6d4 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* ── Hero Gradient Background ─────────────────────────── */
+.hero-gradient {
+  background: linear-gradient(135deg, #0f0c29 0%, #302b63 50%, #24243e 100%);
+}
+
+/* ── Premium Button ───────────────────────────────────── */
+.btn-premium {
+  background: linear-gradient(135deg, #6366f1, #8b5cf6);
+  color: white;
+  border: none;
+  position: relative;
+  overflow: hidden;
+  transition: all var(--transition-base);
+}
+.btn-premium::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(255,255,255,0);
+  transition: background 0.2s;
+}
+.btn-premium:hover::after { background: rgba(255,255,255,0.12); }
+.btn-premium:active { transform: scale(0.97); }
+
+/* ── Card Hover ───────────────────────────────────────── */
+.product-card {
+  transition: transform var(--transition-base), box-shadow var(--transition-base);
+}
+.product-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 60px rgba(99,102,241,0.18);
+}
+
+/* ── Skeleton Pulse ───────────────────────────────────── */
+.skeleton-box {
+  background: linear-gradient(90deg, #e5e7eb 25%, #f3f4f6 50%, #e5e7eb 75%);
+  background-size: 200% 100%;
+  animation: skeleton-shimmer 1.5s infinite;
+  border-radius: 0.75rem;
+}
+@keyframes skeleton-shimmer {
+  0%   { background-position: -200% 0; }
+  100% { background-position:  200% 0; }
+}
+
+/* ── Scrollbar Styling ────────────────────────────────── */
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: #6366f1; border-radius: 99px; }
+
+/* ── Line Clamp ───────────────────────────────────────── */
+.line-clamp-2 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}

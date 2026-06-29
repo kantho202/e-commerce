@@ -1,16 +1,35 @@
 import Banner from "@/Components/Home/Banner";
-import Products from "@/Components/Home/Products";
-import Image from "next/image";
+import Categories from "@/Components/Home/Categories";
+import FeaturedProducts from "@/Components/Home/FeaturedProducts";
+import FlashSale from "@/Components/Home/FlashSale";
+import Reviews from "@/Components/Home/Reviews";
+import Brands from "@/Components/Home/Brands";
+
+export const metadata = {
+  title: "Home — Luxoria Premium E-Commerce",
+  description: "Shop the finest curated collection of luxury products. Fast delivery, premium quality.",
+};
 
 export default function Home() {
   return (
-    <div className="space-y-20">
-      <section>
-        <Banner></Banner>
-      </section>
-      <section className="py-1 px-5">
-        <Products></Products>
-      </section>
+    <div>
+      <Banner />
+      <Categories />
+      <FeaturedProducts
+        badge="Handpicked"
+        title="Featured"
+        highlight="Products"
+        limit={8}
+      />
+      <FlashSale />
+      <FeaturedProducts
+        badge="Trending Now"
+        title="Best"
+        highlight="Sellers"
+        limit={4}
+      />
+      <Reviews />
+      <Brands />
     </div>
   );
 }
